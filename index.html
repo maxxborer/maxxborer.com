@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang=ru>
+
+<head>
+  <meta charset=UTF-8>
+  <meta name=viewport content="width=device-width, initial-scale=1.0">
+  <title>Maxim Bureev | Frontend Engineer | maxxborer</title>
+  <meta name=description
+    content="Maxim Bureev (maxxborer) - опытный Frontend Engineer. Разработка инновационных веб-приложений, оптимизация процессов и построение продуктов.">
+  <meta name=keywords
+    content="Maxim Bureev, maxxborer, Frontend Engineer, веб-разработка, JavaScript, TypeScript, React, Vue">
+  <link rel=canonical href=https://maxxborer.com />
+  <link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
+  <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
+  <link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
+  <link rel=manifest href=/site.webmanifest>
+  <link rel=mask-icon href=/safari-pinned-tab.svg color=#8330d5>
+  <meta name=msapplication-TileColor content=#8330d5>
+  <link rel=preload href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" as=style>
+  <link rel=preload href=/avatar.jpg as=image type=image/jpeg>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel=stylesheet>
+  <style>
+    :root {
+      --color-text: #ececec;
+      --color-primary: #8330d5;
+      --color-background: #0c0c0c;
+      --color-background-secondary: #1a1a1a;
+      --color-border: rgba(236, 236, 236, 0.1);
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--color-background);
+      color: var(--color-text);
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    .page {
+      margin: 4vw 1vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    main {
+      border: 1px solid var(--color-border);
+      background-color: var(--color-background-secondary);
+      border-radius: 1.5rem;
+      padding: 2rem;
+      max-width: 30rem;
+      width: 100%;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .profile img {
+      height: 4rem;
+      width: 4rem;
+      border-radius: 1rem;
+      border: 1px solid var(--color-border);
+    }
+
+    .profile-info {
+      font-size: 0.875rem;
+    }
+
+    .profile-name {
+      font-weight: bold;
+      color: white;
+    }
+
+    .profile-jobtitle {
+      color: #a1a1aa;
+      margin: 0;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    .link {
+      font-size: 0.875rem;
+      padding: 0.5rem 1rem;
+      height: 2rem;
+      font-weight: 600;
+      border-radius: 0.5rem;
+      display: flex;
+      align-items: center;
+      color: var(--color-primary);
+      background-color: #262626;
+      border: 1px solid rgba(131, 48, 213, 0.05);
+      transition: all 0.3s;
+      text-decoration: none;
+    }
+
+    .link:hover,
+    .link:focus {
+      outline: 0;
+      box-shadow: 0 0 0 2px var(--color-primary), 0 0 0 4px rgba(131, 48, 213, 0.5);
+      transform: scale(1.025);
+    }
+
+    .link svg {
+      height: 1.5rem;
+      width: 1.5rem;
+      fill: var(--color-primary);
+      margin-right: 0.5rem;
+    }
+
+    article {
+      margin-top: 1rem;
+      font-size: 0.875rem;
+      color: #a1a1aa;
+    }
+
+    h2 {
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.75rem;
+      color: #a1a1aa;
+      margin-top: 1rem;
+    }
+
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+  </style>
+  <meta property=og:type content=profile>
+  <meta property=og:url content=https://maxxborer.com />
+  <meta property=og:title content="Maxim Bureev | Frontend Engineer | maxxborer">
+  <meta property=og:description
+    content="Maxim Bureev (maxxborer) - опытный Frontend Engineer. Разработка инновационных веб-приложений, оптимизация процессов и построение продуктов.">
+  <meta property=og:image content=https://maxxborer.com/avatar.jpg>
+  <meta property=twitter:card content=summary_large_image>
+  <meta property=twitter:url content=https://maxxborer.com />
+  <meta property=twitter:title content="Maxim Bureev | Frontend Engineer | maxxborer">
+  <meta property=twitter:description
+    content="Maxim Bureev (maxxborer) - опытный Frontend Engineer. Разработка инновационных веб-приложений, оптимизация процессов и построение продуктов.">
+  <meta property=twitter:image content=https://maxxborer.com/avatar.jpg>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <meta name="theme-color" content="#0c0c0c">
+</head>
+
+<body>
+  <div class="page">
+    <main>
+      <section aria-labelledby="profile-heading">
+        <h2 id="profile-heading" class="visually-hidden">Профиль</h2>
+        <div class="profile">
+          <img src="/avatar.jpg" alt="Фотография Maxim Bureev" width="64" height="64" />
+          <div class="profile-info">
+            <strong class="profile-name">Maxim Bureev</strong>
+            <p class="profile-jobtitle">🦄 Frontend Engineer</p>
+          </div>
+        </div>
+      </section>
+      <nav class="links" aria-label="Социальные сети и контакты">
+        <a class="link" href="https://habr.com/ru/users/maxxborer/publications/articles" target="_blank"
+          rel="noopener noreferrer">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="m15.24 9 3.66-3.08v15.81H2.48A2.5 2.5 0 0 1 0 19.23V6.93l7.58 6.38a2.19 2.19 0 0 0 2.87-.04L15.25 9h-.01zm-5.46 3.54 1.81-1.62a2.44 2.44 0 0 1-1.18-.53l-9.5-8a.55.55 0 0 0-.91.44v2.8l8.23 6.93a1.19 1.19 0 0 0 1.55-.02zm14.1-10.08a.55.55 0 0 0-.79-.07l-3.2 2.7v16.65h1.63A2.5 2.5 0 0 0 24 19.22V2.82a.55.55 0 0 0-.13-.36z" />
+          </svg>
+          Статьи на Habr
+        </a>
+        <a class="link" href="https://github.com/maxxborer" target="_blank" rel="noopener noreferrer">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 21.07c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22l-.01 3.29c0 .31.2.69.82.57A12 12 0 0 0 12 .3" />
+          </svg>
+          GitHub
+        </a>
+        <a class="link" href="https://maxxborer.t.me" target="_blank" rel="noopener noreferrer">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M11.94 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.06 0zm4.97 7.22c.1 0 .32.03.46.14a.5.5 0 0 1 .17.33c.02.1.04.3.02.47-.18 1.9-.96 6.5-1.36 8.63-.17.9-.5 1.2-.82 1.23-.7.06-1.22-.46-1.9-.9-1.05-.7-1.65-1.13-2.68-1.8-1.18-.78-.41-1.21.26-1.91.18-.19 3.25-2.98 3.3-3.23.02-.04.02-.15-.05-.22s-.17-.04-.25-.02c-.1.02-1.79 1.14-5.06 3.35-.48.33-.91.49-1.3.48a8.5 8.5 0 0 1-1.86-.44c-.76-.25-1.35-.38-1.3-.8.03-.21.32-.43.9-.66a556.4 556.4 0 0 1 6.99-3.01c3.33-1.39 4.03-1.63 4.48-1.64z" />
+          </svg>
+          Telegram
+        </a>
+        <a class="link" href="https://www.linkedin.com/in/maxxborer" target="_blank" rel="noopener noreferrer">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M20.45 20.45h-3.56v-5.57c0-1.32-.02-3.03-1.85-3.03-1.85 0-2.13 1.44-2.13 2.94v5.66H9.35V9h3.42v1.56h.04a3.75 3.75 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.78C.8 0 0 .77 0 1.73v20.54C0 23.23.8 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z" />
+          </svg>
+          LinkedIn
+        </a>
+        <a class="link" href="mailto:me@maxxborer.com">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="m15.24 9 3.66-3.08v15.81H2.48A2.5 2.5 0 0 1 0 19.23V6.93l7.58 6.38a2.19 2.19 0 0 0 2.87-.04L15.25 9h-.01zm-5.46 3.54 1.81-1.62a2.44 2.44 0 0 1-1.18-.53l-9.5-8a.55.55 0 0 0-.91.44v2.8l8.23 6.93a1.19 1.19 0 0 0 1.55-.02zm14.1-10.08a.55.55 0 0 0-.79-.07l-3.2 2.7v16.65h1.63A2.5 2.5 0 0 0 24 19.22V2.82a.55.55 0 0 0-.13-.36z" />
+          </svg>
+          me@maxxborer.com
+        </a>
+      </nav>
+      <article>
+        <section aria-labelledby="about-heading">
+          <h2 id="about-heading" class="visually-hidden">Обо мне</h2>
+          <p>Стремлюсь внести свой вклад в разработку инновационных и полезных продуктов.</p>
+          <p>Предпочитаю динамичную среду небольших команд и открыт к новым возможностям в сфере разработки передовых
+            технологий 🌍</p>
+        </section>
+        <section aria-labelledby="frontend-skills-heading">
+          <h2 id="frontend-skills-heading">Frontend skills</h2>
+          <ul>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>React.js and Vue.js frameworks</li>
+            <li>State management: Redux, Vuex</li>
+            <li>API managers: Apollo GraphQL, TanStack Query</li>
+            <li>Styling: SCSS, LESS, Styled Components</li>
+            <li>UI/UX: performance profiling and optimization, adaptive user interface, troubleshooting</li>
+            <li>Build tools: Webpack, Vite</li>
+            <li>Testing: Jest, Playwright</li>
+          </ul>
+        </section>
+        <section aria-labelledby="devops-skills-heading">
+          <h2 id="devops-skills-heading">DevOps skills</h2>
+          <ul>
+            <li>GitLab CI/CD</li>
+            <li>Docker and docker-compose</li>
+            <li>Kubernetes (little experience)</li>
+            <li>nginx, traefik, caddy</li>
+          </ul>
+        </section>
+        <section aria-labelledby="backend-skills-heading">
+          <h2 id="backend-skills-heading">Backend skills</h2>
+          <ul>
+            <li>Node.js</li>
+            <li>Frameworks: Express.js, NestJS</li>
+            <li>Databases: MongoDB (mongoose), PostgreSQL</li>
+          </ul>
+        </section>
+        <section aria-labelledby="management-skills-heading">
+          <h2 id="management-skills-heading">Management skills</h2>
+          <ul>
+            <li>Agile methodologies (Scrum, Kanban)</li>
+            <li>Team management and mentorship</li>
+            <li>Project planning and estimation</li>
+            <li>Performance management and goal setting</li>
+          </ul>
+        </section>
+        <section aria-labelledby="language-skills-heading">
+          <h2 id="language-skills-heading">Языковые навыки</h2>
+          <ul>
+            <li>Английский: B1 (Intermediate)</li>
+            <li>Русский: Родной (Native)</li>
+          </ul>
+        </section>
+      </article>
+    </main>
+  </div>
+  <footer>
+    <p>© 2024 Maxim Bureev. Все права защищены.</p>
+  </footer>
+</body>
+
+</html>
