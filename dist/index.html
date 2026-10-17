@@ -57,11 +57,11 @@ a>span:first-child{min-width:0}
 .stack{display:flex;flex:1 0 auto;align-items:center;justify-content:space-around;gap:24px;list-style:none;margin:0;padding:0 24px 0 0}
 .stack li{display:flex;flex-shrink:0;align-items:center;gap:8px;font-size:.875rem;line-height:1.5;white-space:nowrap}
 .stack svg{width:20px;height:20px;flex-shrink:0;fill:currentColor}
-.marquee-toggle:checked~.marquee .marquee-track,.technologies:focus-within .marquee-track{animation-play-state:paused}
+.marquee-toggle:checked~.marquee .marquee-track{animation-play-state:paused}
 @keyframes technology-scroll{to{transform:translateX(-50%)}}
 a:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
 .resume:focus-visible{outline-color:var(--ink)}
-@media(hover:hover){a:hover{background:var(--ink);border-color:var(--ink);color:var(--paper)}.technologies:hover .marquee-track{animation-play-state:paused}}
+@media(hover:hover){a:hover{background:var(--ink);border-color:var(--ink);color:var(--paper)}.marquee:hover .marquee-track{animation-play-state:paused}}
 a:active{background:var(--ink);border-color:var(--ink);color:var(--paper)}
 ::selection{background:var(--ink);color:var(--paper)}
 @media(max-width:520px){main{border-radius:16px}.links{gap:10px}a{min-height:64px;padding:16px 20px}}
