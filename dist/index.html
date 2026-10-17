@@ -34,37 +34,35 @@
 body{margin:0;min-width:0;min-height:100vh;min-height:100svh;padding:clamp(16px,4vw,56px);padding-top:max(clamp(16px,4vw,56px),env(safe-area-inset-top));padding-bottom:max(clamp(16px,4vw,56px),env(safe-area-inset-bottom));padding-left:max(clamp(16px,4vw,56px),env(safe-area-inset-left));padding-right:max(clamp(16px,4vw,56px),env(safe-area-inset-right));display:flex;align-items:center}
 main{width:100%;max-width:1080px;margin:auto;background:var(--paper);border-radius:20px}
 header{padding:clamp(24px,5vw,64px);padding-bottom:clamp(24px,3vw,32px)}
-.handle{margin:0 0 clamp(32px,5vw,56px);font:400 .8125rem/1.5 Arial,Helvetica,sans-serif;letter-spacing:.08em;overflow-wrap:anywhere}
 h1{margin:0;font-family:Unbounded,Arial,Helvetica,sans-serif;font-size:clamp(2.5rem,8.5vw,6rem);font-weight:400;line-height:1;letter-spacing:-.04em;overflow-wrap:anywhere}
 h1 span{display:block}
-.role{margin:24px 0 0;font-size:clamp(1rem,2.2vw,1.25rem);line-height:1.5}
+.role{margin:24px 0 0;color:var(--blue);font-size:clamp(1.25rem,3vw,2rem);font-weight:700;line-height:1.35;overflow-wrap:anywhere}
 nav{padding:0 clamp(24px,5vw,64px) clamp(24px,5vw,64px)}
-.links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;list-style:none;margin:0;padding:0}
+.links{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;list-style:none;margin:0;padding:0}
 li{min-width:0}
-a{color:inherit;text-decoration:none;display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:80px;height:100%;padding:20px 24px;border:1px solid var(--line);border-radius:12px;font-size:1.125rem;line-height:1.4;overflow-wrap:anywhere}
+a{color:inherit;text-decoration:none;display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:80px;height:100%;padding:20px 24px;border:1px solid var(--line);border-radius:12px;font-family:Unbounded,Arial,Helvetica,sans-serif;font-size:1rem;line-height:1.5;overflow-wrap:anywhere}
 a>span:first-child{min-width:0}
 .arrow{flex-shrink:0;font:400 1.5rem/1 Arial,sans-serif}
-small{display:block;margin-top:4px;font-size:.8125rem;line-height:1.5}
 .resume{background:var(--blue);border-color:var(--blue);color:var(--paper)}
-.links>li:last-child{grid-column:1/-1}
-.resume>span:first-child{font-family:Unbounded,Arial,Helvetica,sans-serif;font-size:1rem}
-.resume small{font-family:Arial,Helvetica,sans-serif}
-.stack{display:flex;flex-wrap:wrap;gap:12px 24px;list-style:none;margin:24px 0 0;padding:0}
+.links>li:first-child{grid-column:1/-1}
+.stack{display:grid;grid-template-columns:minmax(0,1fr);gap:12px 24px;list-style:none;margin:24px 0 0;padding:0}
 .stack li{display:flex;align-items:center;gap:8px;font-size:.875rem;line-height:1.5}
+.stack span{min-width:0;overflow-wrap:anywhere}
 .stack svg{width:20px;height:20px;flex-shrink:0;fill:currentColor}
 a:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
 .resume:focus-visible{outline-color:var(--ink)}
 @media(hover:hover){a:hover{background:var(--ink);border-color:var(--ink);color:var(--paper)}}
 a:active{background:var(--ink);border-color:var(--ink);color:var(--paper)}
 ::selection{background:var(--ink);color:var(--paper)}
-@media(max-width:520px){main{border-radius:16px}.links{grid-template-columns:minmax(0,1fr);gap:10px}a{min-height:64px;padding:16px 20px}}
+@media(max-width:520px){main{border-radius:16px}.links{gap:10px}a{min-height:64px;padding:16px 20px}}
+@media(min-width:24rem){.stack{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:48rem){.stack{grid-template-columns:repeat(4,minmax(0,1fr))}.links{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(forced-colors:active){a:focus-visible,.resume:focus-visible{outline-color:Highlight}.resume{border-color:LinkText}}
 </style>
 </head>
 <body>
 <main>
 <header>
-<p class="handle">maxxborer.com</p>
 <h1><span>Максим</span> <span>Буреев</span></h1>
 <p class="role" lang="en">Senior Frontend Engineer</p>
 <ul class="stack" role="list" aria-label="Основные технологии">
@@ -76,11 +74,11 @@ a:active{background:var(--ink);border-color:var(--ink);color:var(--paper)}
 </header>
 <nav aria-label="Ссылки">
 <ul class="links" role="list">
+<li><a class="resume" href="https://drive.google.com/drive/folders/10xMhbkPHM9QCVAdlVYeclPatpG51NElN"><span>Резюме</span><span class="arrow" aria-hidden="true">↗</span></a></li>
 <li><a href="https://t.me/maxxborer"><span lang="en">Telegram</span><span class="arrow" aria-hidden="true">↗</span></a></li>
 <li><a href="https://github.com/maxxborer"><span lang="en">GitHub</span><span class="arrow" aria-hidden="true">↗</span></a></li>
 <li><a href="https://www.linkedin.com/in/maxxborer/"><span lang="en">LinkedIn</span><span class="arrow" aria-hidden="true">↗</span></a></li>
-<li><a href="mailto:maxxborer@gmail.com"><span><span lang="en">Email</span><small lang="en">maxxborer@gmail.com</small></span><span class="arrow" aria-hidden="true">↗</span></a></li>
-<li><a class="resume" href="https://drive.google.com/drive/folders/10xMhbkPHM9QCVAdlVYeclPatpG51NElN"><span>Резюме<small>на русском и английском</small></span><span class="arrow" aria-hidden="true">↗</span></a></li>
+<li><a href="mailto:maxxborer@gmail.com"><span lang="en">maxxborer<wbr>@gmail.com</span><span class="arrow" aria-hidden="true">↗</span></a></li>
 </ul>
 </nav>
 </main>
