@@ -45,7 +45,7 @@ a>span:first-child{min-width:0}
 .arrow{flex-shrink:0;font:400 1.5rem/1 Arial,sans-serif}
 .resume{background:var(--blue);border-color:var(--blue);color:var(--paper)}
 .links>li:first-child{grid-column:1/-1}
-.stack{display:grid;grid-template-columns:minmax(0,1fr);gap:12px 24px;list-style:none;margin:24px 0 0;padding:0}
+.stack{display:flex;flex-wrap:wrap;gap:12px 24px;list-style:none;margin:24px 0 0;padding:0}
 .stack li{display:flex;align-items:center;gap:8px;font-size:.875rem;line-height:1.5}
 .stack span{min-width:0;overflow-wrap:anywhere}
 .stack svg{width:20px;height:20px;flex-shrink:0;fill:currentColor}
@@ -55,8 +55,7 @@ a:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
 a:active{background:var(--ink);border-color:var(--ink);color:var(--paper)}
 ::selection{background:var(--ink);color:var(--paper)}
 @media(max-width:520px){main{border-radius:16px}.links{gap:10px}a{min-height:64px;padding:16px 20px}}
-@media(min-width:24rem){.stack{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(min-width:48rem){.stack{grid-template-columns:repeat(4,minmax(0,1fr))}.links{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:48rem){.links{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(forced-colors:active){a:focus-visible,.resume:focus-visible{outline-color:Highlight}.resume{border-color:LinkText}}
 </style>
 </head>
