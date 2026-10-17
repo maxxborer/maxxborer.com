@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">Максим Буреев — Senior Frontend Engineer</title>
+  <desc id="description">JavaScript, TypeScript, Vue, Nuxt. maxxborer.com</desc>
+  <style>
+    @font-face{font-family:Unbounded;src:url(../dist/assets/unbounded-regular.769fce852a69.woff2) format("woff2");font-weight:400}
+    text{font-family:Arial,Helvetica,sans-serif;fill:#20201e}
+    .name{font-family:Unbounded,Arial,sans-serif;font-size:108px;font-weight:400;letter-spacing:-4.32px}
+  </style>
+  <rect width="1200" height="630" fill="#1616d9"/>
+  <rect x="30" y="30" width="1140" height="570" rx="20" fill="#f4f3ec"/>
+  <text x="312" y="158" font-size="28">maxxborer.com</text>
+  <text class="name" x="308" y="274">Максим</text>
+  <text class="name" x="308" y="382">Буреев</text>
+  <text x="312" y="454" font-size="40">Senior Frontend Engineer</text>
+  <text x="312" y="510" font-size="26">JavaScript · TypeScript · Vue · Nuxt</text>
+</svg>
