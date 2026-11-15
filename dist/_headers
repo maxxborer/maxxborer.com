@@ -4,9 +4,6 @@
 /
   Cache-Control: public, max-age=0, must-revalidate
 
-/pp
-  Cache-Control: public, max-age=0, must-revalidate
-
 /favicon.svg
   Cache-Control: public, max-age=0, must-revalidate
 
