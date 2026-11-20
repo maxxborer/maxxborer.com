@@ -9,3 +9,6 @@
 
 /favicon.png
   Cache-Control: public, max-age=0, must-revalidate
+
+/products/dosroka/docs/terms
+  Cache-Control: public, max-age=0, must-revalidate

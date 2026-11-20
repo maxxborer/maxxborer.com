@@ -18,4 +18,17 @@ The site is intentionally small: a responsive contact page, technology list, ré
 
 The repository contains the **deployable output** in `dist/`; no compilation step is required before publishing these files. The Wrangler configuration serves `dist/` as static assets on the custom domain.
 
+## DOSROKA terms
+
+`assets-source/dosroka/terms.md` mirrors the approved terms from the bot repository. After updating the approved text, copy it here verbatim and regenerate the committed static page with Pandoc:
+
+```sh
+pandoc --from=commonmark-raw_html --to=html5 --wrap=none \
+  --template=assets-source/dosroka/terms-template.html \
+  --metadata='title:DOSROKA: условия использования и обработка данных' \
+  --output=dist/products/dosroka/docs/terms.html assets-source/dosroka/terms.md
+```
+
+The page at `/products/dosroka/docs/terms` works without scripts. The Telegram Instant View template is in [`assets-source/dosroka/instant-view.txt`](assets-source/dosroka/instant-view.txt); test it against the deployed URL in Telegram's editor. The plain URL stays usable in a browser and does not require Instant View.
+
 If you are looking for more substantial source-code examples, see [my GitHub profile](https://github.com/maxxborer#selected-work) and [engineering notes](https://github.com/maxxborer/maxxborer/blob/main/ENGINEERING.md).

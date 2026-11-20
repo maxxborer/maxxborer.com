@@ -1,0 +1,6 @@
+?path: ^/products/dosroka/docs/terms/?$
+
+body: //article[@id="dosroka-terms"]
+title: $body/h1
+cover: //figure[@id="dosroka-cover"]/img
+@remove: $body/h1
